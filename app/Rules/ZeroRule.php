@@ -7,7 +7,7 @@ use Illuminate\Contracts\Validation\Rule;
 class ZeroRule implements Rule
 {
     
-    protected  $powerpointSlides;
+    protected $powerpointSlides;
     /**
      * Create a new rule instance.
      *
