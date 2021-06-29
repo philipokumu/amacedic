@@ -8,7 +8,7 @@
   -->
   <div class="logo">
     <a href="#" class="simple-text logo-normal">
-      {{ __('Top Notch Homeworks') }}
+      {{ __('The Exchange') }}
     </a>
   </div>
   <div class="sidebar-wrapper">

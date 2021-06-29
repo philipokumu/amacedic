@@ -1,4 +1,4 @@
-@extends('admin.layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => '', 'title' => __('Top Notch Homeworks')])
+@extends('admin.layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => '', 'title' => __('The Exchange')])
 
 @section('content')
 <div class="container" style="height: auto;">
