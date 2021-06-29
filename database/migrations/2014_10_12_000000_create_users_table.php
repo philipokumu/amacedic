@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Support\Facades\DB;
+// use Illuminate\Support\Facades\DB;
 
 class CreateUsersTable extends Migration
 {
@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->from(50);
             $table->string('name');
             $table->string('email')->unique();
             $table->string('phone')->default('07 20 123 456');
@@ -31,7 +31,7 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
 
-        DB::update("ALTER TABLE users AUTO_INCREMENT = 100;");
+        // DB::update("ALTER TABLE users AUTO_INCREMENT = 100;");
     }
 
     /**
