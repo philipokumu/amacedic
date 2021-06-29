@@ -14,7 +14,7 @@ class CreateOrdersTable extends Migration
     public function up()
     {
         Schema::create('orders', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->from(500);
             $table->unsignedInteger('user_id');
             $table->string('academicLevel');
             $table->string('typeOfPaper');
@@ -62,10 +62,10 @@ class CreateOrdersTable extends Migration
             $table->dateTime('expensesAmountRequested_at')->nullable();
             $table->decimal('balance')->default('0.00');
             $table->ipAddress('visitor');
-            $table->timestampsTz();           
+            $table->timestampsTz();
         });
 
-        DB::update("ALTER TABLE orders AUTO_INCREMENT = 500;");
+        // DB::update("ALTER TABLE orders AUTO_INCREMENT = 500;");
     }
 
     /**
