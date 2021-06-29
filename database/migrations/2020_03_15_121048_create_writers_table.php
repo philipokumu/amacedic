@@ -14,7 +14,7 @@ class CreateWritersTable extends Migration
     public function up()
     {
         Schema::create('writers', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('id')->from(50);
             $table->string('name');
             $table->string('nickname')->nullable();
             $table->string('email')->unique();
@@ -34,7 +34,7 @@ class CreateWritersTable extends Migration
             $table->timestamps();
         });
 
-        DB::update("ALTER TABLE writers AUTO_INCREMENT = 50;");
+        // DB::update("ALTER TABLE writers AUTO_INCREMENT = 50;");
     }
 
     /**
