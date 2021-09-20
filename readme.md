@@ -1,1 +1,1 @@
-An assignment exchange system made with Laravel
+A document exchange system made with Laravel
